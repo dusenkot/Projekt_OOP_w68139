@@ -1,23 +1,24 @@
 ﻿using System;
 namespace Projekt
 {
-    class Program
+    using System;
+
+    namespace Projekt
     {
-        static void Main()
+        class Program
         {
-            ReservationManager reservationManager = new ReservationManager();
+            static void Main(string[] args)
+            {
+                ReservationManager reservationManager = new ReservationManager();
 
-            // Приклад додавання кабінетів
-            reservationManager.AddClassroom(new Classroom { Id = 1, Name = "A" });
-            reservationManager.AddClassroom(new Classroom { Id = 2, Name = "B" });
+                // Викликати метод запуску системи резервацій
+                reservationManager.RunReservationSystem();
 
-            // Приклад резервації
-            reservationManager.ReserveClassroom(reservationManager.GetClassroomById(1), DateTime.Now, DateTime.Now.AddHours(2));
-            reservationManager.ReserveClassroom(reservationManager.GetClassroomById(2), DateTime.Now.AddHours(1), DateTime.Now.AddHours(3));
-
-            // Показ резервацій
-            reservationManager.DisplayReservations();
+                // Вивести на екран інформацію про резервації після здійснення резервацій
+                reservationManager.DisplayReservations();
+            }
         }
     }
+
 }
 

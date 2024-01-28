@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace Projekt
 {
     public class ReservationManager
@@ -50,10 +51,67 @@ namespace Projekt
                 Console.WriteLine($"Reservation {reservation.Id}: Classroom '{reservation.ReservedClassroom.Name}', Time: {reservation.StartTime} - {reservation.EndTime}");
             }
         }
+
         public Classroom GetClassroomById(int classroomId)
         {
             return classrooms.FirstOrDefault(c => c.Id == classroomId);
         }
+
+        public void RunReservationSystem()
+        {
+            Console.WriteLine("Welcome to the Reservation System!");
+            DisplayAllClassrooms();
+            // Display existing reservation
+
+            // Read classroom ID from the console
+            int classroomId = ReadClassroomIdFromConsole();
+            Classroom selectedClassroom = GetClassroomById(classroomId);
+
+            if (selectedClassroom != null)
+            {
+                // Read reservation time from the console
+                DateTime startTime = ReadReservationTimeFromConsole("start time");
+                DateTime endTime = ReadReservationTimeFromConsole("end time");
+
+                // Reserve the classroom
+                ReserveClassroom(selectedClassroom, startTime, endTime);
+            }
+            else
+            {
+                Console.WriteLine("Invalid classroom ID. Exiting.");
+            }
+
+        }
+
+        private int ReadClassroomIdFromConsole()
+        {
+            Console.Write("Enter Classroom ID to reserve: ");
+            int classroomId;
+            while (!int.TryParse(Console.ReadLine(), out classroomId))
+            {
+                Console.Write("Invalid input. Enter a valid Classroom ID: ");
+            }
+            return classroomId;
+        }
+
+        private DateTime ReadReservationTimeFromConsole(string timeType)
+        {
+            DateTime dateTime;
+            Console.Write($"Enter {timeType} (yyyy-MM-dd HH:mm): ");
+            while (!DateTime.TryParseExact(Console.ReadLine(), "yyyy-MM-dd HH:mm", null, System.Globalization.DateTimeStyles.None, out dateTime))
+            {
+                Console.Write($"Invalid input. Enter a valid {timeType} (yyyy-MM-dd HH:mm): ");
+            }
+            return dateTime;
+        }
+        public void DisplayAllClassrooms()
+        {
+            Console.WriteLine("All Classrooms:");
+            foreach (var classroom in classrooms)
+            {
+                Console.WriteLine($"Classroom {classroom.Id}: {classroom.Name}, Availability: {(classroom.IsAvailable ? "Available" : "Occupied")}");
+            }
+        }
+        
     }
 }
-

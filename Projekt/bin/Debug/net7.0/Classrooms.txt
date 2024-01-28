@@ -1,4 +1,5 @@
-1,A,True
-2,B,True
-1,A,True
-2,B,True
+1,Classroom A,true
+2,Classroom B,true
+3,Classroom C,true
+4,Classroom D,true
+5,Classroom E,true
