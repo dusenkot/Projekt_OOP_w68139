@@ -6,7 +6,6 @@ using System.Linq;
 
 class Teacher : Person
 {
-    // Assume these properties are declared in your Person class
     public List<Lecture> LecturesTaught { get; set; }
     public List<Laboratory> LaboratoriesTaught { get; set; }
     public List<Project> ProjectsTaught { get; set; }
