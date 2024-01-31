@@ -1,0 +1,72 @@
+[
+  {
+    "SubjectName": "Math",
+    "Room": "Room101",
+    "GroupNumber": 1,
+    "StartTime": "2024-01-31T08:00:00",
+    "EndTime": "2024-01-31T09:00:00"
+  },
+  {
+    "SubjectName": "History",
+    "Room": "Room102",
+    "GroupNumber": 2,
+    "StartTime": "2024-01-31T10:00:00",
+    "EndTime": "2024-01-31T11:00:00"
+  },
+  {
+    "SubjectName": "Physics",
+    "Room": "Room103",
+    "GroupNumber": 3,
+    "StartTime": "2024-01-31T12:00:00",
+    "EndTime": "2024-01-31T13:00:00"
+  },
+  {
+    "SubjectName": "Chemistry",
+    "Room": "Room104",
+    "GroupNumber": 4,
+    "StartTime": "2024-01-31T14:00:00",
+    "EndTime": "2024-01-31T15:00:00"
+  },
+  {
+    "SubjectName": "Biology",
+    "Room": "Room105",
+    "GroupNumber": 5,
+    "StartTime": "2024-01-31T16:00:00",
+    "EndTime": "2024-01-31T17:00:00"
+  },
+  {
+    "SubjectName": "Computer Science",
+    "Room": "Room106",
+    "GroupNumber": 6,
+    "StartTime": "2024-01-31T18:00:00",
+    "EndTime": "2024-01-31T19:00:00"
+  },
+  {
+    "SubjectName": "Literature",
+    "Room": "Room107",
+    "GroupNumber": 7,
+    "StartTime": "2024-01-31T20:00:00",
+    "EndTime": "2024-01-31T21:00:00"
+  },
+  {
+    "SubjectName": "Art",
+    "Room": "Room108",
+    "GroupNumber": 8,
+    "StartTime": "2024-01-31T22:00:00",
+    "EndTime": "2024-01-31T23:00:00"
+  },
+  {
+    "SubjectName": "Music",
+    "Room": "Room109",
+    "GroupNumber": 9,
+    "StartTime": "2024-02-01T09:00:00",
+    "EndTime": "2024-02-01T10:00:00"
+  },
+  {
+    "SubjectName": "Physical Education",
+    "Room": "Room110",
+    "GroupNumber": 10,
+    "StartTime": "2024-02-01T11:00:00",
+    "EndTime": "2024-02-01T12:00:00"
+  }
+]

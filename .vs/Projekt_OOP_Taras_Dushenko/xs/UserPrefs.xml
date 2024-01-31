@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{2FA2A110-7269-4A23-9BF8-B36D735501C8}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Projekt_OOP_Taras_Dushenko/Person.cs">
+    <Files>
+      <File FileName="Projekt_OOP_Taras_Dushenko/Person.cs" Line="7" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Projekt_OOP_Taras_Dushenko">
+            <Node name="Projekt_OOP_Taras_Dushenko" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Projekt__OOP__Taras__Dushenko PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

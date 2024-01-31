@@ -1,0 +1,16 @@
+[
+  {
+    "SubjectName": "Math",
+    "Room": "Room101",
+    "GroupNumber": 0,
+    "StartTime": "2024-01-31T17:39:47.037942+01:00",
+    "EndTime": "2024-01-31T18:39:47.062449+01:00"
+  },
+  {
+    "SubjectName": "History",
+    "Room": "Room102",
+    "GroupNumber": 0,
+    "StartTime": "2024-01-31T19:39:47.062501+01:00",
+    "EndTime": "2024-01-31T20:39:47.062502+01:00"
+  }
+]

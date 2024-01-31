@@ -1,0 +1,26 @@
+[
+  {
+    "RoomNumber": 101,
+    "IsReserved": false,
+    "Reservations": [],
+    "ReservedSubject": null
+  },
+  {
+    "RoomNumber": 102,
+    "IsReserved": false,
+    "Reservations": [],
+    "ReservedSubject": null
+  },
+  {
+    "RoomNumber": 103,
+    "IsReserved": false,
+    "Reservations": [],
+    "ReservedSubject": null
+  },
+  {
+    "RoomNumber": 104,
+    "IsReserved": false,
+    "Reservations": [],
+    "ReservedSubject": null
+  }
+]

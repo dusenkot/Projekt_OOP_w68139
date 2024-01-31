@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "TJ8YMedVzFOImj3TDXPLr6c8AcOnDfrtr0vC7HICipgJrYqAbDTtwfX+Z38JWQRPyo6fK/x5RRERyxCXM+Besg==",
+  "success": true,
+  "projectFilePath": "/Users/dusenkot/Projects/Projekt_OOP_w68139/Projektvs2/Projektvs2.csproj",
+  "expectedPackageFiles": [
+    "/Users/dusenkot/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
