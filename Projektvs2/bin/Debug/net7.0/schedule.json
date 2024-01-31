@@ -3,14 +3,16 @@
     "SubjectName": "Math",
     "Room": "Room101",
     "GroupNumber": 0,
-    "StartTime": "2024-01-31T17:39:47.037942+01:00",
-    "EndTime": "2024-01-31T18:39:47.062449+01:00"
+    "StartTime": "2024-01-31T21:02:01.508582+01:00",
+    "EndTime": "2024-01-31T22:02:01.529247+01:00",
+    "ReservedBy": null
   },
   {
     "SubjectName": "History",
     "Room": "Room102",
     "GroupNumber": 0,
-    "StartTime": "2024-01-31T19:39:47.062501+01:00",
-    "EndTime": "2024-01-31T20:39:47.062502+01:00"
+    "StartTime": "2024-01-31T23:02:01.529309+01:00",
+    "EndTime": "2024-02-01T00:02:01.529309+01:00",
+    "ReservedBy": null
   }
 ]
