@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
+
 class Student : Person
 {
     public int StudentId { get; set; }
@@ -11,7 +12,7 @@ class Student : Person
     public Student()
     {
         // Load student data from a file during instantiation
-        
+        LoadStudentFromFile("student.json");
     }
 
     public void ViewSchedule()
@@ -115,4 +116,21 @@ class Student : Person
             LastName = "Smith"
         };
     }
+    public void LoadStudentFromFile(string filePath)
+    {
+        if (File.Exists(filePath))
+        {
+            FileManager fileManager = new FileManager();
+            var loadedStudents = fileManager.LoadFromFile<List<Student>>(filePath);
+        }
+        else
+        {
+            Console.WriteLine($"Student file '{filePath}' not found. Creating a new student.");
+
+            // Create a new student and save it to the file
+            Student newStudent = CreateNewStudent();
+            InitializeStudentFile(filePath, newStudent);
+        }
+    }
+
 }
