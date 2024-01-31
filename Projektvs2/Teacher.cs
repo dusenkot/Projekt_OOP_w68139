@@ -217,4 +217,40 @@ class Teacher : Person
         Laboratory,
         Project
     }
+    public void SaveTeacherToFile(string filePath)
+    {
+        var teacherData = new
+        {
+            FirstName,
+            LastName,
+            LecturesTaught,
+            LaboratoriesTaught,
+            ProjectsTaught
+        };
+
+        string json = Newtonsoft.Json.JsonConvert.SerializeObject(teacherData, Newtonsoft.Json.Formatting.Indented);
+
+        File.WriteAllText(filePath, json);
+    }
+
+    public void LoadTeacherFromFile(string filePath)
+    {
+        if (File.Exists(filePath))
+        {
+            string json = File.ReadAllText(filePath);
+
+            var teacherData = Newtonsoft.Json.JsonConvert.DeserializeObject<Teacher>(json);
+
+            FirstName = teacherData.FirstName;
+            LastName = teacherData.LastName;
+            LecturesTaught = teacherData.LecturesTaught;
+            LaboratoriesTaught = teacherData.LaboratoriesTaught;
+            ProjectsTaught = teacherData.ProjectsTaught;
+        }
+        else
+        {
+            Console.WriteLine($"Teacher file '{filePath}' not found. Creating a new teacher.");
+        }
+    }
 }
+

@@ -32,8 +32,28 @@ class Program
         }
         else if (roleChoice == "2")
         {
-            // Створення та використання об'єкта Teacher
-            Teacher teacher = new Teacher { FirstName = "John", LastName = "Doe" };
+            // Teacher section
+            Teacher teacher = new Teacher();
+
+            // Check if the teacher file doesn't exist, then create a new teacher and save to file
+            if (!File.Exists("teacher.json"))
+            {
+                Console.WriteLine("No teacher file found. Creating a new teacher...");
+
+                teacher.FirstName = "John";
+                teacher.LastName = "Doe";
+
+                // ... initialize lectures, laboratories, and projects ...
+                teacher.LecturesTaught.Add(new Lecture { /*...*/ });
+                teacher.LaboratoriesTaught.Add(new Laboratory { /*...*/ });
+                teacher.ProjectsTaught.Add(new Project { /*...*/ });
+
+                // Save teacher data to file
+                teacher.SaveTeacherToFile("teacher.json");
+
+                Console.WriteLine("New teacher created and saved to 'teacher.json'.");
+            }
+            Teacher teachers = new Teacher { FirstName = "John", LastName = "Doe" };
             Console.WriteLine($"Welcome, {teacher.FirstName} {teacher.LastName}!");
             // Поки користувач не введе "exit", дозволяємо викладачу виконувати дії
 

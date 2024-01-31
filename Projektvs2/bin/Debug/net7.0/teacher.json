@@ -1,0 +1,62 @@
+{
+  "FirstName": "John",
+  "LastName": "Doe",
+  "LecturesTaught": [
+    {
+      "SubjectName": "Math Lecture",
+      "Room": "Room101",
+      "GroupNumber": 1,
+      "StartTime": "2022-12-01T10:00:00",
+      "EndTime": "2022-12-01T11:30:00",
+      "ReservedBy": null
+    },
+    {
+      "SubjectName": null,
+      "Room": null,
+      "GroupNumber": 0,
+      "StartTime": "0001-01-01T00:00:00",
+      "EndTime": "0001-01-01T00:00:00",
+      "ReservedBy": null
+    }
+  ],
+  "LaboratoriesTaught": [
+    {
+      "Groups": [],
+      "SubjectName": "Physics Lab",
+      "Room": "Room102",
+      "GroupNumber": 2,
+      "StartTime": "2022-12-01T13:00:00",
+      "EndTime": "2022-12-01T15:00:00",
+      "ReservedBy": null
+    },
+    {
+      "Groups": [],
+      "SubjectName": null,
+      "Room": null,
+      "GroupNumber": 0,
+      "StartTime": "0001-01-01T00:00:00",
+      "EndTime": "0001-01-01T00:00:00",
+      "ReservedBy": null
+    }
+  ],
+  "ProjectsTaught": [
+    {
+      "GroupNumber2": 0,
+      "SubjectName": "Computer Science Project",
+      "Room": "Room103",
+      "GroupNumber": 3,
+      "StartTime": "2022-12-01T15:30:00",
+      "EndTime": "2022-12-01T17:00:00",
+      "ReservedBy": null
+    },
+    {
+      "GroupNumber2": 0,
+      "SubjectName": null,
+      "Room": null,
+      "GroupNumber": 0,
+      "StartTime": "0001-01-01T00:00:00",
+      "EndTime": "0001-01-01T00:00:00",
+      "ReservedBy": null
+    }
+  ]
+}

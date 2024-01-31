@@ -1,6 +1,18 @@
-﻿class Student : Person
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+
+class Student : Person
 {
+    public int StudentId { get; set; }
     public List<Subject> Subjects { get; private set; } = new List<Subject>();
+
+    public Student()
+    {
+        // Load student data from a file during instantiation
+        
+    }
 
     public void ViewSchedule()
     {
@@ -9,6 +21,12 @@
         {
             subject.DisplayDetails();
         }
+    }
+    public void LoadScheduleFromFile(string filePath)
+    {
+        FileManager fileManager = new FileManager();
+        Subjects = fileManager.LoadFromFile<Subject>(filePath);
+        Console.WriteLine($"Schedule loaded from {filePath}.");
     }
 
     public void RegisterSubject(Subject subject)
@@ -20,16 +38,9 @@
     public void SaveScheduleToFile(string filePath)
     {
         FileManager fileManager = new FileManager();
-        fileManager.SaveToFile(filePath, Subjects);
+        fileManager.SaveToFile<Subject>(filePath, Subjects);
         Console.WriteLine($"Schedule saved to {filePath}.");
     }
-    public void LoadScheduleFromFile(string filePath)
-    {
-        FileManager fileManager = new FileManager();
-        Subjects = fileManager.LoadFromFile<Subject>(filePath);
-        Console.WriteLine($"Schedule loaded from {filePath}.");
-    }
-
 
     public void ChooseAndRegisterSubjects()
     {
@@ -48,7 +59,6 @@
             }
             else if (actionChoice == "2")
             {
-                // Дозволяє студенту вибрати предмет для реєстрації
                 Console.WriteLine("Available Subjects:");
                 foreach (var subject in GetAllSubjects())
                 {
@@ -81,10 +91,28 @@
         }
     }
 
-    // Перенесено за межі методу ChooseAndRegisterSubjects
     static List<Subject> GetAllSubjects()
     {
         DataRepository dataRepository = new DataRepository();
         return dataRepository.GetAllSubjects();
+    }
+
+    public static void InitializeStudentFile(string filePath, Student student)
+    {
+        FileManager fileManager = new FileManager();
+        // Wrap the student in a List<Student> before passing it to SaveToFile
+        fileManager.SaveToFile<Student>(filePath, new List<Student> { student });
+        Console.WriteLine($"New student data saved to {filePath}.");
+    }
+
+    public static Student CreateNewStudent()
+    {
+        // Create a new student with some initial data
+        return new Student
+        {
+            StudentId = 1,
+            FirstName = "Alice",
+            LastName = "Smith"
+        };
     }
 }
