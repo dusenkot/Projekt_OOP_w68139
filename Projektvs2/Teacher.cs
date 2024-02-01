@@ -118,7 +118,7 @@ class Teacher : Person
 
                            
                             UpdateTeacherSchedule(subject);
-
+                            SaveTeacherToFile("teacher.json");
                             Console.WriteLine($"Room {roomToReserve.RoomNumber} reserved successfully for subject '{subject.SubjectName}'.");
                         }
                         else
@@ -232,6 +232,7 @@ class Teacher : Person
         File.WriteAllText(filePath, json);
     }
 
+
     public void LoadTeacherFromFile(string filePath)
     {
         if (File.Exists(filePath))
@@ -251,5 +252,6 @@ class Teacher : Person
             Console.WriteLine($"Teacher file '{filePath}' not found. Creating a new teacher.");
         }
     }
+
 }
 

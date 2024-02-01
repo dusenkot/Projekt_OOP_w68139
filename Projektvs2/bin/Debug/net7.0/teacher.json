@@ -1,6 +1,6 @@
 {
-  "FirstName": "John",
-  "LastName": "Doe",
+  "FirstName": null,
+  "LastName": null,
   "LecturesTaught": [
     {
       "SubjectName": "Math Lecture",
@@ -8,14 +8,6 @@
       "GroupNumber": 1,
       "StartTime": "2022-12-01T10:00:00",
       "EndTime": "2022-12-01T11:30:00",
-      "ReservedBy": null
-    },
-    {
-      "SubjectName": null,
-      "Room": null,
-      "GroupNumber": 0,
-      "StartTime": "0001-01-01T00:00:00",
-      "EndTime": "0001-01-01T00:00:00",
       "ReservedBy": null
     }
   ],
@@ -31,11 +23,11 @@
     },
     {
       "Groups": [],
-      "SubjectName": null,
-      "Room": null,
+      "SubjectName": "Art",
+      "Room": "Room103",
       "GroupNumber": 0,
-      "StartTime": "0001-01-01T00:00:00",
-      "EndTime": "0001-01-01T00:00:00",
+      "StartTime": "2022-12-01T15:30:30",
+      "EndTime": "2022-12-01T16:30:30",
       "ReservedBy": null
     }
   ],
@@ -47,15 +39,6 @@
       "GroupNumber": 3,
       "StartTime": "2022-12-01T15:30:00",
       "EndTime": "2022-12-01T17:00:00",
-      "ReservedBy": null
-    },
-    {
-      "GroupNumber2": 0,
-      "SubjectName": null,
-      "Room": null,
-      "GroupNumber": 0,
-      "StartTime": "0001-01-01T00:00:00",
-      "EndTime": "0001-01-01T00:00:00",
       "ReservedBy": null
     }
   ]

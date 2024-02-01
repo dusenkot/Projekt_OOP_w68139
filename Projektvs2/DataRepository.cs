@@ -99,4 +99,22 @@ class DataRepository
 
         return new List<T>();
     }
+    public void SaveRoomsToFile(List<Room> rooms, string filePath)
+    {
+        string json = Newtonsoft.Json.JsonConvert.SerializeObject(rooms, Newtonsoft.Json.Formatting.Indented);
+        File.WriteAllText(filePath, json);
+    }
+    public List<Room> LoadRoomsFromFile(string filePath)
+    {
+        if (File.Exists(filePath))
+        {
+            string json = File.ReadAllText(filePath);
+            return Newtonsoft.Json.JsonConvert.DeserializeObject<List<Room>>(json);
+        }
+        else
+        {
+            Console.WriteLine($"Rooms file '{filePath}' not found. Creating a new room list.");
+            return new List<Room>();
+        }
+    }
 }

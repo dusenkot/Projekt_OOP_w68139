@@ -75,6 +75,7 @@ class Student : Person
                 {
                     RegisterSubject(selectedSubject);
                     Console.WriteLine($"Successfully registered for '{selectedSubject.SubjectName}'.");
+                    SaveScheduleToFile("schedule.json");
                 }
                 else
                 {

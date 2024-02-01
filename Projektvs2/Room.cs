@@ -8,6 +8,6 @@
     public Room(int roomNumber)
     {
         RoomNumber = roomNumber;
-        IsReserved = false;
+        IsReserved = true;
     }
 }

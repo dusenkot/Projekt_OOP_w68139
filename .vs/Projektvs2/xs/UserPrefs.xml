@@ -1,32 +1,35 @@
 ﻿<Properties StartupConfiguration="{E5451CE4-3C73-4CE5-BFEE-6E2537775405}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Projektvs2 PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Projektvs2/Student.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Projektvs2/Room.cs">
     <Files>
-      <File FileName="Projektvs2/Lecture.cs" Line="12" Column="1" />
-      <File FileName="Projektvs2/ClassSchedule.cs" Line="20" Column="6" />
-      <File FileName="Projektvs2/Program.cs" Line="59" Column="1" />
-      <File FileName="Projektvs2/Teacher.cs" Line="256" Column="1" />
-      <File FileName="Projektvs2/Student.cs" Line="76" Column="50" />
-      <File FileName="Projektvs2/FileManager.cs" Line="28" Column="39" />
-      <File FileName="Projektvs2/Subject.cs" Line="17" Column="1" />
-      <File FileName="Projektvs2/DataRepository.cs" Line="77" Column="6" />
+      <File FileName="Projektvs2/Lecture.cs" />
+      <File FileName="Projektvs2/ClassSchedule.cs" />
+      <File FileName="Projektvs2/Program.cs" />
+      <File FileName="Projektvs2/Teacher.cs" />
+      <File FileName="Projektvs2/Student.cs" />
+      <File FileName="Projektvs2/FileManager.cs" />
+      <File FileName="Projektvs2/Subject.cs" />
+      <File FileName="Projektvs2/DataRepository.cs" />
+      <File FileName="Projektvs2/StudyDirection.cs" />
+      <File FileName="Projektvs2/Person.cs" />
+      <File FileName="Projektvs2/Room.cs" Line="14" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Projektvs2">
-            <Node name="Projektvs2">
-              <Node name="Student.cs" selected="True" />
+          <Node name="Projektvs2" expanded="True">
+            <Node name="Projektvs2" expanded="True">
+              <Node name="Room.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
