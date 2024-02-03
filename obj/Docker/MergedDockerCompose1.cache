@@ -1,0 +1,51 @@
+name: dockercompose1937396287859432644
+services:
+  projektvs2:
+    build:
+      context: /Users/dusenkot/Projects/Projekt_OOP_w68139
+      dockerfile: Projektvs2/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Projektvs2
+      target: base
+    container_name: Projektvs2
+    entrypoint:
+      - tail
+      - -f
+      - /dev/null
+    environment:
+      NUGET_FALLBACK_PACKAGES: ""
+    image: projektvs2:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net7.0/Projektvs2.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      default: null
+    tty: true
+    volumes:
+      - type: bind
+        source: /Users/dusenkot/Projects/Projekt_OOP_w68139/Projektvs2
+        target: /app
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/dusenkot/Projects/Projekt_OOP_w68139
+        target: /src
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/dusenkot/vsdbg/vs2017u5
+        target: /remote_debugger
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/dusenkot/.nuget/packages/
+        target: /root/.nuget/packages
+        read_only: true
+        bind:
+          create_host_path: true
+networks:
+  default:
+    name: dockercompose1937396287859432644_default

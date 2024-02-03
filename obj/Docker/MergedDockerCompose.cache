@@ -1,0 +1,12 @@
+name: dockercompose1937396287859432644
+services:
+  projektvs2:
+    build:
+      context: /Users/dusenkot/Projects/Projekt_OOP_w68139
+      dockerfile: Projektvs2/Dockerfile
+    image: projektvs2
+    networks:
+      default: null
+networks:
+  default:
+    name: dockercompose1937396287859432644_default

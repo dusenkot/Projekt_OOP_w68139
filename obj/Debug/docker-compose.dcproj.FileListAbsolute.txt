@@ -1,0 +1,9 @@
+/Users/dusenkot/Projects/Projekt_OOP_w68139/bin/Debug/Projektvs2.deps.json
+/Users/dusenkot/Projects/Projekt_OOP_w68139/bin/Debug/Projektvs2.runtimeconfig.json
+/Users/dusenkot/Projects/Projekt_OOP_w68139/bin/Debug/Projektvs2
+/Users/dusenkot/Projects/Projekt_OOP_w68139/bin/Debug/Projektvs2.dll
+/Users/dusenkot/Projects/Projekt_OOP_w68139/bin/Debug/Newtonsoft.Json.dll
+/Users/dusenkot/Projects/Projekt_OOP_w68139/bin/Debug/Projektvs2.pdb
+/Users/dusenkot/Projects/Projekt_OOP_w68139/obj/Debug/docker-compose.dcproj.AssemblyReference.cache
+/Users/dusenkot/Projects/Projekt_OOP_w68139/obj/Debug/docker-compose.dcproj.CoreCompileInputs.cache
+/Users/dusenkot/Projects/Projekt_OOP_w68139/obj/Debug/docker-compose.dcproj.CopyComplete

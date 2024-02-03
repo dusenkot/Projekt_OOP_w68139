@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  projektvs2:
+    image: ${DOCKER_REGISTRY-}projektvs2
+    build:
+      context: .
+      dockerfile: Projektvs2/Dockerfile
